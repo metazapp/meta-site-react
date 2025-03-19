@@ -41,7 +41,7 @@ const Contact = () => {
       });
       
       // Check if the response is valid JSON
-      const contentType = response.headers.get('content-type');
+      const contentType  = response.headers.get('content-type');
       
       if (contentType && contentType.includes('application/json')) {
         const result = await response.json();
