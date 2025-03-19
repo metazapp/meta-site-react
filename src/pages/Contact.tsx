@@ -160,18 +160,6 @@ const Contact = () => {
             >
               <h2 className="text-2xl font-bold mb-8">Send us a Message</h2>
               
-              {/* Status message */}
-              {status.submitted && (
-                <div className={`p-4 mb-6 rounded-md ${status.success ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} flex items-start gap-2`}>
-                  {status.success ? (
-                    <Check className="mt-0.5 flex-shrink-0" size={18} />
-                  ) : (
-                    <AlertCircle className="mt-0.5 flex-shrink-0" size={18} />
-                  )}
-                  <p>{status.message}</p>
-                </div>
-              )}
-              
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -258,6 +246,17 @@ const Contact = () => {
                   )}
                 </button>
               </form>
+                 {/* Status message */}
+                 {status.submitted && (
+                <div className={`p-4 mb-6 rounded-md ${status.success ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} flex items-start gap-2`}>
+                  {status.success ? (
+                    <Check className="mt-0.5 flex-shrink-0" size={18} />
+                  ) : (
+                    <AlertCircle className="mt-0.5 flex-shrink-0" size={18} />
+                  )}
+                  <p>{status.message}</p>
+                </div>
+              )}
             </motion.div>
 
             {/* Contact Information */}
