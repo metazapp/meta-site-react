@@ -52,7 +52,7 @@ const Contact = () => {
             submitting: false,
             submitted: true,
             success: true,
-            message: 'Thank you! Your message has been sent successfully. We will get back to you soon'
+            message: 'Thank you! Your message has been sent successfully.<br>We will get back to you soon.'
           });
           
           // Reset form after successful submission
@@ -90,7 +90,7 @@ const Contact = () => {
             submitting: false,
             submitted: true,
             success: true,
-            message: 'Thank you! Your message has been sent successfully. We will get back to you soon.'
+            message: 'Thank you! Your message has been sent successfully.<br>We will get back to you soon.'
           });
           
           // Reset form after successful submission
